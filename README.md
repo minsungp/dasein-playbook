@@ -25,7 +25,7 @@ It installs, asks before reading anything, learns your voice from what you sent,
 Or do it by hand:
 
 ```bash
-git clone https://github.com/METHEZONE/dasein-playbook && cd dasein-playbook/dasein-one && uv sync
+git clone https://github.com/minsungp/dasein-playbook && cd dasein-playbook/dasein-one && uv sync
 uv run dasein ingest ~/dasein-data --me "you@example.com"   # keeps only what you wrote -> ~/.dasein/mine.jsonl
 uv run dasein fit                                            # fits ~/.dasein/reward.pkl, prints held-out accuracy
 claude mcp add dasein -- uv --directory "$PWD" run dasein mcp
